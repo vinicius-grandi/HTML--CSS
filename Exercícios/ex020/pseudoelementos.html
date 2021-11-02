@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elements</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a::after {
+            content: " <";
+            font-weight: bold;
+        }
+
+        a::before {
+            content: "> ";
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+        a:active {
+            color: yellow;
+        }
+        p::first-letter {
+            font-size: 3em;
+            color: rgb(30, 30, 58);
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Elementos</h1>
+    <h2>Links</h2>
+    <ul>
+        <li><a href="https://github.com">Github</a></li>
+        <li><a href="https://youtube.com">Youtube</a></li>
+        <li><a href="https://google.com">Google</a></li>
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione veritatis placeat hic ex dignissimos alias officiis omnis debitis, tempora commodi temporibus, error explicabo pariatur magni beatae! Adipisci ea porro magni?</p>
+</body>
+</html>
