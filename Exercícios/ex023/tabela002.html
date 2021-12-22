@@ -11,6 +11,7 @@
         }
 
         table {
+            position: relative;
             border-collapse: collapse;
         }
 
@@ -19,8 +20,12 @@
             color: white;
         }
 
-        td, th {
+        th, tfoot {
             border: solid 1px black;
+            padding: 15px;
+        }
+
+        td {
             padding: 15px;
         }
 
@@ -31,11 +36,31 @@
         .num {
             text-align: right;
         }
+
+        caption {
+            border: solid 1px black;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: black;
+            border: solid 1px black;
+        }
     </style>
 </head>
 <body>
     <h1>Tabela Gigante</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
                 <th scope="col">
@@ -44,7 +69,7 @@
                 <th scope="col">
                     Estado
                 </th>
-                <th scope="col">
+                <th scope="col" style="width: 50px;">
                     Total de Habidantes
                 </th>
             </tr>
@@ -65,14 +90,102 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">16 636 666	</td>
             </tr>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td class="num">44 744 199	</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td class="num">20 989 259</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 636 666	</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td class="num">44 744 199	</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td class="num">20 989 259</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 636 666	</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td class="num">44 744 199	</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td class="num">20 989 259</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 636 666	</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td class="num">44 744 199	</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td class="num">20 989 259</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 636 666	</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td class="num">44 744 199	</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td class="num">20 989 259</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 636 666	</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row">Total:</th>
                 <td></td>
-                <td class="num"><strong>82370124</strong></td>
+                <td ><strong class="num" id="total">0</strong></td>
             </tr>
         </tfoot>
     </table>
+    <h2>Textos</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur facere sapiente deserunt tenetur quae consequatur, harum, eos aliquam quaerat ut vitae nemo. Mollitia, architecto voluptatem! Alias repudiandae odit aut! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio minima eum qui placeat consequuntur voluptates totam illo quam aut, quis cum provident. Expedita dolorem ea, ratione animi totam provident voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ducimus quod, inventore ab repellat, voluptates doloribus ea, facere est necessitatibus provident nihil iure a. Nemo facere fugiat provident quasi consequuntur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas nam, saepe maiores voluptatum libero dolorum repudiandae id ullam, excepturi dignissimos fugiat? In eligendi ipsa, perferendis quam laudantium veniam perspiciatis aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sapiente assumenda incidunt quo sint, molestiae eius perspiciatis laborum fugit numquam explicabo exercitationem nobis, amet labore voluptate quod aut cupiditate ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi hic, quisquam eveniet quas possimus qui earum? Similique provident at unde libero quaerat alias quibusdam obcaecati veniam commodi? Nobis, repellendus repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusamus dolorum porro cum placeat quia, magnam hic sapiente sequi blanditiis voluptatibus distinctio iusto exercitationem nam eos molestiae repudiandae illo assumenda. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, laborum. Aspernatur obcaecati, amet, nihil fugiat asperiores mollitia tenetur sed possimus cum ab aliquam ex tempore fuga rerum ut facilis iure! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim mollitia tempora similique officiis quam doloribus. Perspiciatis, consequuntur quae dolor ipsam ea ex nostrum dolorem inventore voluptate. Adipisci id aspernatur doloremque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sint sapiente nam beatae pariatur tempore repellendus molestiae nemo optio, incidunt culpa ex eos quaerat? Commodi vel vero dolorum voluptatibus omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ipsam corrupti tempora quaerat incidunt explicabo dolore officia? Doloribus cumque ipsa explicabo perferendis eligendi. Reprehenderit molestiae enim architecto natus illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam placeat deserunt perferendis optio inventore odio id, vel distinctio sit totam quis dignissimos cum accusamus molestias exercitationem minus, doloribus tempore error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempore nulla assumenda voluptate eius perspiciatis ipsam! In ab animi eius debitis iste, fugiat, eveniet possimus dignissimos facere a aliquid autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aspernatur fugiat soluta corrupti accusamus itaque voluptatibus? Quia sapiente accusantium accusamus ipsam, magni commodi rerum quas, autem facere consectetur laborum adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae tenetur eaque omnis odit magnam alias modi ab non corporis tempora facere itaque earum voluptates, quisquam natus eligendi eum inventore commodi. lo
+        
+    </p>
 </body>
+<script>
+    const nums = document.querySelectorAll('.num')
+    const total = document.querySelector('#total')
+    let s = 0
+    nums.forEach(e => s += Number(e.innerHTML.replaceAll(' ', '')))
+    s = String(s)
+    total.innerHTML = s.match(/\d{1,3}(?=(\d{3})*$)/g)
+</script>
 </html>
