@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const canva = document.querySelector('canvas');
   const ctx = canva.getContext('2d');
   const pencil = { enabled: false };
+  const lineWidthRange = document.querySelector('#test');
 
   canva.addEventListener('mousedown', (ev) => {
     ctx.beginPath();
@@ -41,5 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelector('#default-color').addEventListener('click', () => {
     ctx.strokeStyle = "#000";
+  });
+
+  lineWidthRange.addEventListener('change', () => {
+    const width = lineWidthRange.value === '0' ? 1 : lineWidthRange.value;
+    console.log(lineWidthRange.value);
+    ctx.lineWidth = width;
   });
 });
