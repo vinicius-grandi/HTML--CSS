@@ -9,15 +9,31 @@
   </head>
   <body>
     <section class="container">
-      <header class="container__header">
-        <h1 class="container__title"><span class="container__logo">PWA</span> and iOS</h1>
-      </header>
       <div class="feature">
         <header class="feature__header">
           <h2 class="feature__subtitle">01. IndexedDB (Events)</h2>
         </header>
         <div class="feature__content">
-          Banco de dados: <span id="output-db">Inicializando...</span>
+          <form>
+            <label for="name">
+              Nome:
+              <input type="text" id="name">
+            </label>
+            <input type="submit" id="submit" value="Send">
+          </form>
+          <label for="get-by-id">
+            getAllValues:
+            <input type="submit" id="get-all-values-btn" value="Send">
+          </label>
+          <br>
+          <label for="get-by-id">
+            getValueByID:
+            <input type="text" id="get-by-id">
+            <input type="submit" id="get-by-id-btn" value="Send">
+          </label>
+        </div>
+        <div class="feature__content">
+          <ul id="list"></ul>
         </div>
       </div>
       <nav class="navigation">
