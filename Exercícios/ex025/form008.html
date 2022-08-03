@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form>
+        <p>
+            <label>
+                Número 1:
+                <input type="number" min="0" max="50" id="n1" oninput="somar()">
+            </label>
+        </p>
+        <p>
+            <label>
+                Número 2:
+                <input type="number" min="0" max="50" id="n2" oninput="somar()">
+            </label>
+        </p>
+        <p>
+            <label>
+                Soma:
+                <output id="soma" for="n1 n2">0</output>
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+    <script>
+        function somar() {
+            soma.value = parseInt(n1.value) +  parseInt(n2.value)
+        }
+    </script>
+</body>
+</html>
